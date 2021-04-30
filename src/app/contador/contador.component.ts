@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ContadorComponent {
 
-  counter = 0;
+  numero = 0;
   onPlus(): void {
-    this.counter += 10000;
+    this.numero += 10000;
   }
   onsubtract(): void {
-    this.counter -= 10000;
+    this.numero -= 10000;
   }
 }

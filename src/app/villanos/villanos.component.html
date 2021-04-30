@@ -12,7 +12,7 @@
             <div *ngIf="selectedVillano">
                 <h2>{{selectedVillano.name | uppercase}} : </h2>
                 <h5><b>
-                <div><span>ID: </span> <span class="badge badge-primary">{{selectedVillano.id}} </span></div>
+                <button><div><span>ID: </span> <span class="badge badge-primary">{{selectedVillano.id}} </span></div></button>
                 <div>
                     <b><label for="villan-name">Nombre: </label></b>
                     <input type="text" [(ngModel)]="selectedVillano.name" placeholder="poder" class="form-control" disabled>

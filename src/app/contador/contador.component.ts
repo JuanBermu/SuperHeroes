@@ -1,34 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contador',
   templateUrl: './contador.component.html',
   styleUrls: ['./contador.component.css']
 })
-export class ContadorComponent implements OnInit {
+export class ContadorComponent {
 
-  title = 'Web Contador';
-  numero = 10;
-  base = 5;
-
-  constructor() { }
-
-  ngOnInit(): void {
+  counter = 0;
+  onPlus(): void {
+    this.counter += 10000;
   }
-
-  acumular(valor: number){
-
-    this.numero += valor;
-
+  onsubtract(): void {
+    this.counter -= 10000;
   }
-/*
-  sumar(){
-    this.numero +=1;
-  }
-
-  restar(){
-    this.numero -=1;
-  }
-  */
-
 }

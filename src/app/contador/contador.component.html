@@ -1,10 +1,13 @@
-<h1>{{title}}</h1>
-
-<h3>La base es: {{base}}</h3>
-
-<button (click) = "acumular(base)">+{{base}}</button>
-<!-- <button (click) = "sumar()">+1</button> -->
-<span> {{numero}} </span>
-
-<button (click) = "acumular(-base)">-{{base}}</button>
-<!-- <button (click) = "restar()">-1</button> -->
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+        <h4>
+            <p>
+               Contador
+            </p>
+            <button (click)="onPlus()">Sumar +10000 </button>
+            <p>Contador: {{counter}} </p>
+            <button (click)="onsubtract()">Restar -10000</button></h4>
+    </div>
+</div>

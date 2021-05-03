@@ -1,6 +1,6 @@
 <div class="container">
     <router-outlet></router-outlet>
-    <h2 class="title">VILLANOS</h2>
+    <h1 class="title">VILLANOS</h1>
     <div class="row">
         <div class="col">
             <ul class="villanos">
@@ -11,19 +11,18 @@
         <div class="col">
             <div *ngIf="selectedVillano">
                 <button><h4>{{selectedVillano.name | uppercase}} : </h4></button>
-                <h5><b>
-                <button><div><span>ID: </span> <span class="badge badge-primary">{{selectedVillano.id}} </span></div></button>
+               
+                <b><button><div><span>ID: </span> <span>{{selectedVillano.id}} </span></div></button></b>
                 <div>
-                    <b><label for="villan-name">Nombre: </label></b>
-                    <input type="text" [(ngModel)]="selectedVillano.name" placeholder="poder" class="form-control" disabled>
+                
+                    <label for="villan-name">Nombre: </label>
+                    <input type="text" [(ngModel)]="selectedVillano.name" placeholder="poder" disabled>
             </div>
             <div>
                 <label for="villan-poder">Nivel de poder: </label>
-               <input type="text" [(ngModel)]="selectedVillano.poder" placeholder="poder" class="form-control" disabled>
+               <input type="text" [(ngModel)]="selectedVillano.poder" placeholder="poder" disabled>
                 <button (click)="onPlus(selectedVillano)">Aumentar Poder</button>
             </div>
-            </b>
-            </h5>
         </div>
     </div>
 </div>
